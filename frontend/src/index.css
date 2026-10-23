@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/*
+ * Colors, radii and fonts come from the MUI theme as CSS variables
+ * (--mui-palette-*, --mui-shape-borderRadius) and --font-sans set in main.tsx.
+ * No raw values here: change src/theme/tokens.ts instead.
+ */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Origin / destination pins */
+.endpoint-marker {
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 11px;
+  background: var(--mui-palette-primary-main);
+  color: var(--mui-palette-primary-contrastText);
+  border: 2px solid var(--mui-palette-map-casing);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+  font: 700 11px/1 var(--font-sans);
+  letter-spacing: 0.02em;
+}
+
+/* Checkpoint popup */
+.maplibregl-popup-content {
+  border-radius: var(--mui-shape-borderRadius);
+  padding: 10px 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+.cp-popup {
+  font: 13px/1.4 var(--font-sans);
+  color: var(--mui-palette-text-primary);
+  min-width: 190px;
+}
+.cp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-weight: 600;
+}
+.cp-chip {
+  color: var(--mui-palette-common-white);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+}
+.cp-eta {
+  color: var(--mui-palette-text-secondary);
+  margin: 4px 0 6px;
+}
+.cp-popup table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.cp-popup td {
+  padding: 1px 0;
+}
+.cp-popup td:first-child {
+  color: var(--mui-palette-text-secondary);
+  width: 48px;
+}
+.cp-muted {
+  color: var(--mui-palette-text-secondary);
+}
+.cp-reason {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--mui-palette-divider);
+  font-weight: 500;
+}
