@@ -1,0 +1,4 @@
+# Files that must stay LF on every platform: parsed on Linux by Vercel's build.
+requirements.txt text eol=lf
+vercel.json text eol=lf
+.vercelignore text eol=lf
