@@ -1,0 +1,9 @@
+# Python dependencies for the Vercel function (api/index.py). Keep in step with backend/requirements.txt.
+Django==6.1.2
+djangorestframework==3.18.3
+django-cors-headers==4.9.0
+django-environ==0.14.0
+httpx==0.28.1
+dj-database-url==3.1.2
+psycopg[binary]==3.3.6
+whitenoise==6.12.0
